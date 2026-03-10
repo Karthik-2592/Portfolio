@@ -7,7 +7,7 @@ function App() {
   
   return (
     <>
-      <div className = "h-full w-full m-[20px] bg-black-800 flex flex-col items-center">
+      <div className = "h-full w-full  bg-background flex flex-col items-center">
         <NavigationBar/>
         <HeroBanner/>
       </div>
