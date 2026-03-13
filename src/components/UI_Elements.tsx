@@ -40,3 +40,14 @@ export function Button({ children, onClick, variant = 'default', size='default'}
         </button>
     )
 }
+
+export function Card({ className, ...props }: React.ComponentProps<"div">) {
+  return (
+    <div
+      data-slot="card"
+      className={`bg-card text-card-foreground flex flex-col gap-6 rounded-xl border,
+        ${className}`}
+      {...props}
+    />
+  );
+}
