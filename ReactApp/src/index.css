@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(76, 250, 206, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(76, 250, 206, 0.5);
+}
+
+/* ── Section margins ── */
+.section-margins {
+  padding-left: clamp(2.5rem, 5vw, 8rem);
+  padding-right: clamp(2.5rem, 5vw, 8rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Content margins ── */
+.content-margins {
+  padding-left: clamp(2rem, 10vw, 15rem);
+  padding-right: clamp(2rem, 10vw, 15rem);
+}
+
+/* ── Glassmorphism utility ── */
+.glass {
+  background: rgba(26, 26, 36, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Gradient text utility ── */
+.gradient-text {
+  background: linear-gradient(135deg, #4CFACD 0%, #6366f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Glow effect ── */
+.glow-teal {
+  box-shadow: 0 0 20px rgba(76, 250, 206, 0.15),
+              0 0 60px rgba(76, 250, 206, 0.05);
+}
+
+.glow-teal-hover:hover {
+  box-shadow: 0 0 25px rgba(76, 250, 206, 0.25),
+              0 0 80px rgba(76, 250, 206, 0.1);
+}
