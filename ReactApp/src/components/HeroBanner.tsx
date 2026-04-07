@@ -116,13 +116,13 @@ export function HeroBanner() {
               Contact Me
             </Button>
           </a>
-          <a href="https://github.com/Karthik-2592" target="_blank" rel="noopener noreferrer" className="hero-btn">
+          <a href={import.meta.env.VITE_GITHUB_URL || "https://github.com/Karthik-2592"} target="_blank" rel="noopener noreferrer" className="hero-btn">
             <Button variant="outline" size="xl" onClick={() => {}}>
               <Github className="mr-2 h-4 w-4" />
               GitHub
             </Button>
           </a>
-          <a href="https://www.linkedin.com/in/karthik-b-28bb77331/" target="_blank" rel="noopener noreferrer" className="hero-btn">
+          <a href={import.meta.env.VITE_LINKEDIN_URL || "https://www.linkedin.com/in/karthik-b-28bb77331/"} target="_blank" rel="noopener noreferrer" className="hero-btn">
             <Button variant="outline" size="xl" onClick={() => {}}>
               <Linkedin className="mr-2 h-4 w-4" />
               LinkedIn

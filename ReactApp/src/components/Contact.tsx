@@ -11,8 +11,8 @@ const contactMethods = [
   {
     icon: Mail,
     title: 'Email',
-    value: 'karthik210806@gmail.com',
-    href: 'mailto:karthik210806@gmail.com',
+    value: import.meta.env.VITE_EMAIL || 'karthik210806@gmail.com',
+    href: `mailto:${import.meta.env.VITE_EMAIL || 'karthik210806@gmail.com'}`,
     color: 'text-primary',
     bg: 'bg-primary/10',
   },
@@ -142,19 +142,19 @@ export function Contact() {
 
         <div className="contact-buttons flex gap-4 justify-center flex-wrap">
           <div className="contact-btn">
-            <Button onClick={() => { window.location.href = 'mailto:karthik210806@gmail.com'; }} size="lg">
+            <Button onClick={() => { window.location.href = `mailto:${import.meta.env.VITE_EMAIL || 'karthik210806@gmail.com'}`; }} size="lg">
               Send Email
             </Button>
           </div>
           <div className="contact-btn">
-            <Button variant="outline" size="lg" onClick={() => { window.open('https://github.com/Karthik-2592', '_blank'); }}
+            <Button variant="outline" size="lg" onClick={() => { window.open(import.meta.env.VITE_GITHUB_URL || 'https://github.com/Karthik-2592', '_blank'); }}
               customClass="border-white/10 hover:border-primary/30">
               <Github className="mr-2 h-5 w-5" />
               GitHub
             </Button>
           </div>
           <div className="contact-btn">
-            <Button variant="outline" size="lg" onClick={() => { window.open('https://www.linkedin.com/in/karthik-b-28bb77331/', '_blank'); }}
+            <Button variant="outline" size="lg" onClick={() => { window.open(import.meta.env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/karthik-b-28bb77331/', '_blank'); }}
               customClass="border-white/10 hover:border-primary/30">
               <Linkedin className="mr-2 h-5 w-5" />
               LinkedIn

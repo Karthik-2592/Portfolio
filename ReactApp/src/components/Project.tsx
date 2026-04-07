@@ -10,14 +10,14 @@ const projects = [
   {
     title: 'Music Sharing Platform',
     description: 'Full-stack copy-right free music sharing web app with user auth, music catalog, and social features.',
-    image: '/MusicApp.png',
+    image: `${import.meta.env.BASE_URL}MusicApp.png`,
     technologies: ['React + vite', 'Express.js', 'PostgreSQL', 'TailwindCSS'],
     github: 'https://karthik-2592.github.io/DART-v6.1/',
   },
   {
     title: 'Benchmarking',
     description: 'Benchmarking of multipattern matching algorithms and approximate matching with Rabin-Karp and Bloom Filter integration.',
-    image: '/Benchmark.png',
+    image: `${import.meta.env.BASE_URL}Benchmark.png`,
     technologies: ['C++', 'Powershell', 'Python'],
     github: '#',
     code: '#'
@@ -25,7 +25,7 @@ const projects = [
   {
     title: 'Browser Game',
     description: 'Browser game with real-time collaboration, project creation, and progress tracking.',
-    image: '/WebGame.png',
+    image: `${import.meta.env.BASE_URL}WebGame.png`,
     technologies: ['React + vite', 'TailwindCSS', 'TypeScript', 'JavaScript'],
     github: 'https://karthik-2592.github.io/GridLock/',
   },
@@ -33,7 +33,7 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'Modern portfolio with GSAP animations, glassmorphism, and smooth scroll-triggered transitions.',
-    image: '/PortfolioPage.png',
+    image: `${import.meta.env.BASE_URL}PortfolioPage.png`,
     technologies: ['React + vite', 'GSAP', 'TailwindCSS'],
     github: '#',
   },
